@@ -12,7 +12,10 @@ def login():
 def signup():
     return render_template('signup.html')  
 @app.route("/privacy")
-def ldngpg():
+def privacy():
     return render_template('privacy-policy.html')
+@app.route("/feedback")
+def feedback():
+    return render_template('feedback.html')
 if __name__ == "__main__":
     app.run(debug=True)
