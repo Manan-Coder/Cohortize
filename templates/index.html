@@ -587,9 +587,9 @@
     <nav class="navbar">
         <a href="#" class="logo">Cohortize</a>
         <div class="nav-links">
-            <a href="#" class="nav-link">Home</a>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#feedback" class="nav-link">Feedback</a>
+            <a href="/" class="nav-link">Home</a>
+            <a href="/" class="nav-link">About</a>
+            <a href="/feedback" class="nav-link">Feedback</a>
             <div class="auth-buttons">
                 <a href="/signin" style="text-decoration: none;color:white"><button class="btn">Login</button></a>
                 <a href="/signup" style="text-decoration: none;color:white"><button class="btn btn-primary">Sign Up</button></a>
@@ -619,30 +619,30 @@
     <section id="about" class="about">
         <div class="about-content">
             <h2>About</h2>
-            <p>Cohortize is a revolutionary project collaboration platform that brings together creative minds. We provide the tools and space for teams to work seamlessly, turning ideas into reality through effective collaboration and innovative solutions.</p>
+            <p>Cohortize is a revolutionary project collaboration platform that brings together like-minded folks. We provide platform for programmers to collaborate on different projects and bring their ideas to life. We also help them to transform these projects into a fully-fledged product, get funding and show it to the global audience.</p>
         </div>
     </section>
 
 
-    <section class="why-cohortize">
+    <section class="why-cohortize" style="display: flex; flex-direction:column">
         <h2 style="text-align: center; margin-bottom: 3rem;">Why Choose Cohortize?</h2>
         <div class="features-grid">
             <div class="feature-card">
-                <h3>Real-time Collaboration</h3>
-                <p>Work together seamlessly with your team in real-time, no matter where you are.</p>
+                <h3>Project Listing</h3>
+                <p>Showcase your projects and connect with like-minded individuals to collaborate and bring your ideas to life.</p>
             </div>
             <div class="feature-card">
-                <h3>Smart Integration</h3>
-                <p>Integrate with your favorite tools and workflows effortlessly.</p>
+                <h3>Find Projects</h3>
+                <p>Explore projects tailored to your skillset and find the perfect match for your expertise.</p>
             </div>
             <div class="feature-card">
-                <h3>Advanced Security</h3>
-                <p>Enterprise-grade security to keep your projects and data safe.</p>
+                <h3>Startup Showdown</h3>
+                <p>Promote your startup to a global audience and gain visibility in the marketplace.</p>
             </div>
         </div>
     </section>
-
-    <section class="reviews">
+<!--
+    <section class="reviews" style="display: flex; flex-direction:column">
         <h2 style="text-align: center; margin-bottom: 3rem;">What Our Users Say</h2>
         <div class="reviews-grid">
             <div class="review-card">
@@ -676,7 +676,7 @@
                 <p>Lorem Ipsum</p>
             </div>
         </div>
-    </section>
+    </section>-->
 
 <section class="auth-section">
     <h2 class="auth-heading">Ready to Get Started?</h2>
@@ -685,11 +685,11 @@
         Submit your project application or join an existing one. Who knows? This could be the spark that ignites your next big startup adventure! 
     </p>
     <div class="auth-buttons">
-        <a href="/signin" class="btn-link">
+        <!--<a href="/signin" class="btn-link">
             <button class="btn">Login</button>
-        </a>
+        </a>-->
         <a href="/signup" class="btn-link">
-            <button class="btn btn-primary">Sign Up Free</button>
+            <button class="btn btn-primary">Sign Up For Free</button>
         </a>
     </div>
 </section>
@@ -698,10 +698,10 @@
     <footer class="footer" style="z-index :10000;">
         <div class="footer-grid">
             <div class="footer-links">
-                <h3>Company</h3>
-                <a href="/about">About Us</a>
-                <a href="/team">Team</a>
-                <a href="/contact">Contact</a>
+                <h3>Developer</h3>
+                <a href="https://manan-coder.github.io/Personal-website/">About Me</a>
+                <a>Contact Me at - </a>
+                <a>manancoder123@gmail.com</a>
             </div>
             <div class="footer-links">
                 <h3>Legal</h3>
@@ -713,7 +713,8 @@
                 <h3>Support</h3>
                 <!--<a href="/help">Help Center</a>-->
                 <a href="/feedback">Feedback</a>
-                <a href="/contact">Contact Us</a>
+                <a>Contact Us -</a>
+                <a>cohortize@gmail.com</a>
             </div>
             <div class="footer-links">
                 <h3>Social</h3>
@@ -808,16 +809,6 @@
                 }
             }
         });
-
-        document.getElementById('feedbackForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            console.log('Feedback submitted:', { name, email });
-            this.reset();
-            alert('Thank you for your feedback!');
-        });
-
     </script>
 </body>
 </html>
